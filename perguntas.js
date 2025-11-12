@@ -18,3 +18,11 @@ criaCartao(
     'Como se diz oi em ingles?',
     'Oi em ingles é HI (RAI)'
 )
+    let respostaEstaVisivil=false
+
+    function viraCartao(){
+    respostaEstaVisivil=!respostaEstaVisivil
+    cartao.classList.toggle('active',respostaEstaVisivil)
+    }
+    cartao.addEventListener('click',viraCartao)
+    container.appendChild(cartao)
